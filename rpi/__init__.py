@@ -56,7 +56,7 @@ class Rpi:
 
     def __init__(self, host: str, port: int = 6500, timeout: int = 120):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        # self.socket.connect((host, port))
+        self.socket.connect((host, port))
         self.socket.settimeout(timeout)
 
     def read_until(self, string: str = "->", exclude: bool = True) -> bytes:

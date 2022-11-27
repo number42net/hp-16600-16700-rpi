@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hp-16600-16700-rpi",
-    version="0.1.1",
+    version="0.1.2",
     author="Martin Miedema",
     author_email="git@number42.net",
     description="Interface with HP / Agilent 16600A and 16700 logic analyzers",
