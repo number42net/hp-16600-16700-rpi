@@ -51,7 +51,7 @@ class Rpi:
     Args:
         host: A host name or IP address to connect to
         port: The port number to connect to
-        timeout: Number of seconds to timeout if no response is received from the logic analyzer It's recommended to keep this value relatively high, especially loading configuration files can take a long time.
+        timeout: Number of seconds to timeout if no response is received from the logic analyzer, It's recommended to keep this value relatively high, especially loading configuration files can take a long time.
     """
 
     def __init__(self, host: str, port: int = 6500, timeout: int = 120):
@@ -67,7 +67,7 @@ class Rpi:
             string: A list of string service UUIDs to be discovered.
             exclude: If the string should be included with the return data or not
         Returns:
-            All data received from the RPI inteface
+            All data received from the RPI interface
         """
         if isinstance(string, str):
             string = string.encode()
@@ -104,8 +104,8 @@ class Rpi:
         Send data (commands) to the RPI interface
 
         Args:
-            data: The string that needs to be send to the RPI interface
-            newline_first: If this parameter is True, a new line character will first be send and the function
+            data: The string that needs to be sent to the RPI interface
+            newline_first: If this parameter is True, a new line character will first be sent and the function
                 will wait for a prompt to appear. This clears the prompt of any existing data.
         """
         if newline_first:
@@ -120,7 +120,7 @@ class Rpi:
     def get_modules(self) -> list["Analyzer"]:
         """
         Get the modules installed in the logic analyzer, returned as objects which can be used to manipulate those modules.
-        Currently only Logic Analyzer modules are supported
+        Currently, only Logic Analyzer modules are supported
 
         Returns:
             List of Logic Analyzer objects
@@ -163,7 +163,7 @@ class Rpi:
         List available directories in path
 
         Args:
-            path: The path where direcotories can be found
+            path: The path where directories can be found
         Returns:
             List of string on success or None if no directories are found
         """
@@ -226,7 +226,7 @@ class Analyzer(Rpi):
         Start the logic analyzer
 
         Args:
-            rep: Start in repetative mode, defaults to False
+            rep: Start in repetitive mode, defaults to False
         Raises:
             ValueError: Returned error description
         """
@@ -417,7 +417,7 @@ class Analyzer(Rpi):
         Set pods assigned to analyzer as comma seperated list
 
         Args:
-            pods: comma seperated list of pods
+            pods: comma separated list of pods
         Example:
             analyzer.set_pods(\\"A1,A2\\")
         Raises:
