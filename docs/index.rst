@@ -21,7 +21,7 @@ Documentation
 
 Additional resources
 --------------------
-   * Remote Programming Interface (RPI) for the Agilent Technologies 16700 Logic Analysis System `manual <https://www.keysight.com/us/en/assets/9018-40680/programming-guides/9018-40680.pdf>`_
-   * Agilent 16700A/B Logic Analysis System `Help Volume <https://xdevs.com/doc/HP_Agilent_Keysight/HP%2016700A%2C%20B%20Help%20Volume.pdf>`_
-   * Pandas: for using `DataFrames <http://pandas.pydata.org/>`_
+   * `Remote Programming Interface (RPI) for the Agilent Technologies 16700 Logic Analysis System <https://www.keysight.com/us/en/assets/9018-40680/programming-guides/9018-40680.pdf>`_
+   * `Agilent 16700A/B Logic Analysis System Help Volume <https://xdevs.com/doc/HP_Agilent_Keysight/HP%2016700A%2C%20B%20Help%20Volume.pdf>`_
+   * `Pandas: for using DataFrames <http://pandas.pydata.org/>`_
 
